@@ -13,4 +13,4 @@ export const filtrarProdutos = (categoria) => {
 };
 
 
-export const produtosEntradas = filtrarProdutos("Entradas");
+export const produtosEntradas = filtrarProdutos("cabos");
