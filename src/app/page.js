@@ -1,35 +1,72 @@
-
-import React from "react";
-import styles from "./page.module.css";
+'use client';
+import Image from 'next/image';
+import estilos from "./page.module.css";
+import { useState } from "react";
+import {filtrarProdutos,buscarProduto,produtosEntradas,} from "./servico";
+import Cards from './componentes/Cards';
+import Categorias from './componentes/Categorias';
+import CampoDeBusca from './componentes/CampoDeBusca';
+/* 
+import Banner from "@/../public/banner.png"; */
 
 export default function Home() {
+
+  const [dadosFiltrados, setDadosFiltrados] = useState(produtosEntradas);
+  const [textoBuscaDigitado, setTextoBuscaDigitado] = useState("");
+  const [botaoClicado, setBotaoClicado] = useState("Entradas");
+
+  const handleBusca = (textoDigitado) => {
+    setTextoBuscaDigitado(textoDigitado);
+    textoDigitado.length >= 2 && setDadosFiltrados(buscarProduto(textoDigitado));
+    setBotaoClicado("");
+  };
+
+  const handleFiltro = (categoria) => {
+    setTextoBuscaDigitado("");
+    setDadosFiltrados(filtrarProdutos(categoria));
+    setBotaoClicado(categoria);
+  };
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Bem-vindo ao M7 InformaticaRP</h1>
-        <p className={styles.description}>
-          O site oficial do M7 InformaticaRP - Sua fonte de notícias, eventos e
-          informações sobre o servidor de roleplay mais emocionante!
-        </p>
-        <div className={styles.grid}>
-          <a href="/noticias" className={styles.card}>
-            <h2>Notícias &rarr;</h2>
-            <p>Fique por dentro das últimas novidades e atualizações do M7 InformaticaRP.</p>
-          </a>
-          <a href="/eventos" className={styles.card}>
-            <h2>Eventos &rarr;</h2>
-            <p>Confira os próximos eventos, competições e atividades emocionantes no servidor.</p>
-          </a>
-          <a href="/comunidade" className={styles.card}>
-            <h2>Comunidade &rarr;</h2>
-            <p>Conheça a comunidade do M7 InformaticaRP, participe de fóruns e interaja com outros jogadores.</p>
-          </a>
-          <a href="/suporte" className={styles.card}>
-            <h2>Suporte &rarr;</h2>
-            <p>Precisa de ajuda? Acesse nossa seção de suporte para resolver suas dúvidas e problemas.</p>
-          </a>
-        </div>  
+    <main className={estilos.page}>
+      
+      <header className={estilos.topo}>
+        {/* <Image src={Banner} alt="banner" /> */}
+
+        <div>
+          
+         {/*  <div>
+            <Categorias
+            handleFiltro={handleFiltro}
+            botaoClicado={botaoClicado}
+            />
+          </div> */}
+          {/* <div>
+            <CampoDeBusca
+            textoBuscaDigitado={textoBuscaDigitado}
+            handleBusca={handleBusca}
+            />
+          </div> */}
+          <h1>M7-Catálogo</h1>
+          <p>
+           Oi
+          </p>
+        </div>
+
+      </header>
+
+      <main className={estilos.container_principal}>
+       
+        <section className={estilos.secao_cards}>
+          <h2>Cátalogo</h2>
+          <div className={estilos.container_cards}>
+            {dadosFiltrados.map((produto) => (
+              <Cards key={produto.id} produto={produto}  />
+            ))}
+          </div>
+        </section>
+
       </main>
-    </div>
-  );
+    </main>
+  )
 }

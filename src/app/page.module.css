@@ -1,81 +1,127 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
-:root {
-  --font-poppins-sans: "Poppins", sans-serif;
-  --font-anta: "Anta", serif;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: var(--font-poppins-sans);
-  color: var(--text-primary);
-}
-
-.page {
-  
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* font-family: 'Dancing Script', cursive;
+ 
+ .page {
+  min-width: 100%;
 }
 
 .main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 64px 32px;
-  font-family: var(--font-poppins-sans);
+ 
 }
+
 
 /* Enable hover only on non-touch devices 
 @media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
+  
 }
 
 @media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
+  
 }
 
 @media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.page{
+  max-width:1024px ;
+  margin: 0 auto;
+}
+.topo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topo img {
+  width: 100%;
+  height: 100%;
+}
+
+.topo div {
+  max-width: 50%;
+  position: absolute;
+  bottom: 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.topo div h1 {
+  letter-spacing: 5px;
+  font-size: 46px;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+.topo div p {
+  color: goldenrod;
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+}
+
+.container_principal {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.secao_cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.secao_cards h2 {
+  color: goldenrod;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container_cards {
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* @media (max-width: 1024px) {
+  .topo div p {
+    font-size: 28px;
+  }
+} */
+
+@media (max-width: 768px) {
+  .topo div {
+    max-width: 60%;
   }
 
-  .page {
-    --background: #000;
-    --foreground: #000;
+  .topo div h1 {
+    font-size: 36px;
+  }
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .topo div p {
+    font-size: 26px;
   }
 }
-*/
+
+@media (max-width: 550px) {
+
+  .topo div h1 {
+    font-size: 26px;
+  }
+
+  .topo div p {
+    font-size: 18px;
+  }
+}
