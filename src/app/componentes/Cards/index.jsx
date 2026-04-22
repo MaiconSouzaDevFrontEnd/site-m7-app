@@ -6,9 +6,15 @@ export default function Cards({ produto }) {
     <div className={estilos.container}>
 
       <figure className={estilos.figure}>
-        <Image src={produto.imagem} className={estilos.img} alt={produto.nome} loading="lazy" width={300} height={200} /> 
+        <Image
+          src={produto.imagem}
+          className={estilos.img}
+          alt={produto.nome}
+          width={380}
+          height={200}
+          loading="lazy"
+        />
       </figure>
-
       <div className={estilos.container_informacoes}>
         <div className={estilos.container_descricao}>
           <h3>{produto.nome}</h3>

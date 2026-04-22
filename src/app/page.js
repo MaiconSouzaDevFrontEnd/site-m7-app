@@ -31,22 +31,21 @@ export default function Home() {
     <main className={estilos.page}>
       
       <header className={estilos.topo}>
-        {/* <Image src={Banner} alt="banner" /> */}
-
+      
         <div>
           
-         {/*  <div>
+          <div>
             <Categorias
             handleFiltro={handleFiltro}
             botaoClicado={botaoClicado}
             />
-          </div> */}
-          {/* <div>
+          </div>
+          <div>
             <CampoDeBusca
             textoBuscaDigitado={textoBuscaDigitado}
             handleBusca={handleBusca}
             />
-          </div> */}
+          </div>
           <h1>M7-Catálogo</h1>
           <p>
            Oi

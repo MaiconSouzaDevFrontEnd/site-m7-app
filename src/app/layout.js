@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "M7-Cátalogo",
+  title: "M7-Catálogo",
   description: "Conheça o nosso  catálogo de produtos !",
 };
 
