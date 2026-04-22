@@ -1,7 +1,7 @@
 'use client';
-import Image from 'next/image';
+/* import Image from 'next/image'; */
 import estilos from "./page.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {filtrarProdutos,buscarProduto,produtosEntradas,} from "./servico";
 import Cards from './componentes/Cards';
 import Categorias from './componentes/Categorias';
@@ -11,9 +11,13 @@ import Banner from "@/../public/banner.png"; */
 
 export default function Home() {
 
-  const [dadosFiltrados, setDadosFiltrados] = useState(produtosEntradas);
+  const [dadosFiltrados, setDadosFiltrados] = useState([]);
   const [textoBuscaDigitado, setTextoBuscaDigitado] = useState("");
   const [botaoClicado, setBotaoClicado] = useState("Entradas");
+
+  useEffect(() => {
+    setDadosFiltrados(produtosEntradas);
+  }, []);
 
   const handleBusca = (textoDigitado) => {
     setTextoBuscaDigitado(textoDigitado);
