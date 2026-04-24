@@ -1,7 +1,7 @@
 const kd2513cc = "/produtos/kd-2513cc.jpg";
-/* const lasanha = "/produtos/lasanha.jpg";
-const ravioli = "/produtos/ravioli.jpg";
-const capeletti = "/produtos/capeletti.jpg";
+const kd19cl = "/produtos/kd-19cl.webp";
+const airdots3 = "/produtos/airdots3.webp";
+/*const capeletti = "/produtos/capeletti.jpg";
 const nhoque = "/produtos/nhoque.jpg";
 const bruschetta = "/produtos/bruschetta.jpg";
 const carpaccio = "/produtos/carpaccio.jpg";
@@ -38,5 +38,21 @@ export const produtos = [
     descricao:
       "Nome: Cabo Turbo PD 60W Tipo-C para Tipo-C, Modelo: KD - 2513CC, Marca: Kaidi, Tipo: Cabo de carregamento e dados(USB- C ↔ USB - C), Potência: até 60W(carregamento rápido)",
     imagem: kd2513cc,
+  },
+    {
+    id: 2,
+    nome: "KD-19CL",
+    categoria: "cabos",
+    preco: 26.0,
+    descricao:"Modelo: KAIDI KD-19CL (impressão grande e clara) Capacidade de Carga: 20W com suporte a Power Delivery (PD)- Conexão: USB-C para Lightning (compatível com iPhones)-Durabilidade: Cabo com acabamento emborrachado e de nylon trançado",
+    imagem: kd19cl,
+  },
+    {
+    id: 3,
+    nome: "AIRPOTS 3",
+    categoria: "cabos",
+    preco: 32.0,
+    descricao:"Modelo: KAIDI KD-19CL (impressão grande e clara) Capacidade de Carga: 20W com suporte a Power Delivery (PD)- Conexão: USB-C para Lightning (compatível com iPhones)-Durabilidade: Cabo com acabamento emborrachado e de nylon trançado",
+    imagem: airdots3,
   },
 ];

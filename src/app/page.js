@@ -61,7 +61,7 @@ export default function Home() {
       <main className={estilos.container_principal}>
        
         <section className={estilos.secao_cards}>
-          <h2>Cátalogo</h2>
+          <h2>Catálogo</h2>
           <div className={estilos.container_cards}>
             {dadosFiltrados.map((produto) => (
               <Cards key={produto.id} produto={produto}  />
