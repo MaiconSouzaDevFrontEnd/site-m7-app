@@ -39,10 +39,7 @@ export default function Home() {
         <div>
           
           <div>
-            <Categorias
-            handleFiltro={handleFiltro}
-            botaoClicado={botaoClicado}
-            />
+            <Categorias handleFiltro={handleFiltro} botaoClicado={botaoClicado}/>
           </div>
           <div>
             <CampoDeBusca

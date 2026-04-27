@@ -1,4 +1,4 @@
-const kd2513cc = "/produtos/kd-2513cc.jpg";
+const kd2513cc = "/produtos/kd-2513cc.webp";
 const kd19cl = "/produtos/kd-19cl.webp";
 const airdots3 = "/produtos/airdots3.webp";
 /*const capeletti = "/produtos/capeletti.jpg";

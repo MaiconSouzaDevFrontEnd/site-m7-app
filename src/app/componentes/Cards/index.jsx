@@ -3,16 +3,15 @@ import estilos from "./Card.module.css";
 
 export default function Cards({ produto }) {
   return (
-    <div className={estilos.container}>
+    <div className={estilos.card}>
 
       <figure className={estilos.figure}>
         <Image
           src={produto.imagem}
           className={estilos.img}
           alt={produto.nome}
-          width={380}
-          height={200}
-          loading="lazy"
+          width={250}
+          height={280}
         />
       </figure>
       <div className={estilos.container_informacoes}>
