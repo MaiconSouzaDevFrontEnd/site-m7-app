@@ -1,6 +1,9 @@
 const kd2513cc = "/produtos/kd-2513cc.webp";
 const kd19cl = "/produtos/kd-19cl.webp";
 const airdots3 = "/produtos/airdots3.webp";
+const kv12215 = "/produtos/Fonte12V_3.1APlugP4InovaKV-12215.webp";
+const mou20424 = "/produtos/InovaMou-20424BluethonPreto.webp";
+const bmt02 = "/produtos/TecladoUsbBmaxBMT02.webp";
 /*const capeletti = "/produtos/capeletti.jpg";
 const nhoque = "/produtos/nhoque.jpg";
 const bruschetta = "/produtos/bruschetta.jpg";
@@ -35,8 +38,7 @@ export const produtos = [
     nome: "KD-2513CC",
     categoria: "cabos",
     preco: 35.0,
-    descricao:
-      "Nome: Cabo Turbo PD 60W Tipo-C para Tipo-C, Modelo: KD - 2513CC, Marca: Kaidi, Tipo: Cabo de carregamento e dados(USB- C ↔ USB - C), Potência: até 60W(carregamento rápido)",
+    descricao: "",
     imagem: kd2513cc,
   },
     {
@@ -44,7 +46,7 @@ export const produtos = [
     nome: "KD-19CL",
     categoria: "cabos",
     preco: 26.0,
-    descricao:"Modelo: KAIDI KD-19CL (impressão grande e clara) Capacidade de Carga: 20W com suporte a Power Delivery (PD)- Conexão: USB-C para Lightning (compatível com iPhones)-Durabilidade: Cabo com acabamento emborrachado e de nylon trançado",
+    descricao:"",
     imagem: kd19cl,
   },
     {
@@ -52,7 +54,31 @@ export const produtos = [
     nome: "AIRPOTS 3",
     categoria: "cabos",
     preco: 32.0,
-    descricao:"Modelo: KAIDI KD-19CL (impressão grande e clara) Capacidade de Carga: 20W com suporte a Power Delivery (PD)- Conexão: USB-C para Lightning (compatível com iPhones)-Durabilidade: Cabo com acabamento emborrachado e de nylon trançado",
+    descricao:"",
     imagem: airdots3,
   },
+  {
+    id: 4,
+    nome: "FONTE KV-12215 (12V 3.1A)",
+    categoria: "cabos",
+    preco: 22.0,
+    descricao:"",
+    imagem: kv12215,
+  },
+  {
+    id: 5,
+    nome: "Mouse (Bluetooth)",
+    categoria: "cabos",
+    preco: 25.0,
+    descricao:"",
+    imagem: mou20424,
+  },
+  {
+    id: 6,
+    nome: "Teclado BMT-02",
+    categoria: "cabos",
+    preco: 30.0,
+    descricao:"",
+    imagem: bmt02,
+  }
 ];

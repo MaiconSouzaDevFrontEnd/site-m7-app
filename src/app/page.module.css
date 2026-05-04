@@ -27,7 +27,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 .page{
-  max-width:1024px ;
+  max-width:1024px;
   margin: 0 auto;
 }
 .topo {
@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: center;
   height: 200px;
-  background-color: #f0f0f0; /* temporary background */
+  background-color: #505156a5; /* temporary background */
 }
 
 .topo img {

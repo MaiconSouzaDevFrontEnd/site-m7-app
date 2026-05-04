@@ -42,14 +42,11 @@ export default function Home() {
             <Categorias handleFiltro={handleFiltro} botaoClicado={botaoClicado}/>
           </div>
           <div>
-            <CampoDeBusca
-            textoBuscaDigitado={textoBuscaDigitado}
-            handleBusca={handleBusca}
-            />
+            <CampoDeBusca textoBuscaDigitado={textoBuscaDigitado}handleBusca={handleBusca}/>
           </div>
           <h1>M7-Catálogo</h1>
           <p>
-           Oi
+          
           </p>
         </div>
 
